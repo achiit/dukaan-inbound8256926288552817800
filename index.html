@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Fashion Store – Fashion, Style &amp; Quality</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fffaf5;--surface:#fff;--ink:#2a1f1a;--muted:#6f625a;--accent:#9c2c4a;--accent2:#c8903a;--line:#eadfd5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1512;--surface:#261d19;--ink:#f6ece4;--muted:#b7a89d;--accent:#e0708f;--accent2:#e2b062;--line:#3a2d27}}
+:root[data-theme="dark"]{--bg:#1b1512;--surface:#261d19;--ink:#f6ece4;--muted:#b7a89d;--accent:#e0708f;--accent2:#e2b062;--line:#3a2d27}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.2rem;color:var(--accent)}
+nav .links{display:flex;gap:16px;overflow-x:auto;font-size:.9rem}
+nav a{color:var(--ink);text-decoration:none;white-space:nowrap}
+.hero{padding:72px 0 56px;text-align:center;background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 14%,var(--bg)),var(--bg))}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem)}
+.hero p{max-width:620px;margin:16px auto 28px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 26px;border-radius:999px;text-decoration:none;font-weight:600}
+section{padding:56px 0}
+section h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:640px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{font-size:1.2rem;color:var(--accent);margin-bottom:6px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:.9rem}
+.card ul{margin:0;padding-left:18px;font-size:.92rem}
+.alt{background:color-mix(in srgb,var(--accent2) 9%,var(--bg))}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.9rem}
+.season h3{color:var(--accent2)}
+.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0}
+.contact dt{font-weight:600}.contact dd{margin:0;color:var(--muted);overflow-wrap:anywhere}
+footer{text-align:center;padding:40px 20px;border-top:1px solid var(--line)}
+footer h3{color:var(--accent)}
+footer p{color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<header><nav><span class="logo">[Your Store Name]</span>
+<div class="links"><a href="#collections">Collections</a><a href="#seasonal">Seasonal</a><a href="#features">Why Us</a><a href="#shop">Shop Online</a><a href="#visit">Visit</a></div></nav></header>
+
+<div class="hero"><div class="wrap">
+<h1>Discover Your Style.<br>Celebrate Every Occasion.</h1>
+<p>Where fashion meets quality, comfort and elegance. Traditional Indian outfits and modern Western wear for men, women and kids, all under one roof.</p>
+<a class="btn" href="#collections">Explore Collections</a>
+</div></div>
+
+<section id="collections"><div class="wrap">
+<h2>Our Collections</h2>
+<p class="sub">Stylish clothing for every occasion, age group and personal style.</p>
+<div class="grid" id="cats"></div>
+</div></section>
+
+<section id="seasonal" class="alt"><div class="wrap">
+<h2>Seasonal Fashion</h2>
+<p class="sub">Stay fashionable throughout the year.</p>
+<div class="grid season" id="seasons"></div>
+</div></section>
+
+<section id="features"><div class="wrap">
+<h2>Why Choose Us?</h2>
+<p class="sub">We believe fashion should be accessible, comfortable and suitable for every occasion.</p>
+<div class="pills" id="why"></div>
+</div></section>
+
+<section id="shop" class="alt"><div class="wrap">
+<h2>Shop Online</h2>
+<p class="sub">Explore our clothing collections from anywhere.</p>
+<div class="grid" id="online"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Our Mission</h2>
+<p class="sub" style="max-width:760px">To bring together a wide range of fashionable clothing that helps customers express their individual style, with a welcoming shopping experience and options for everyday life, celebrations and special moments.</p>
+</div></section>
+
+<section id="visit" class="contact alt"><div class="wrap">
+<h2>Visit Our Store</h2>
+<p class="sub">Discover outfits that match your style, personality and occasion.</p>
+<div class="card"><dl>
+<dt>Store</dt><dd>[Your Clothing Store Name]</dd>
+<dt>Address</dt><dd>[Your Store Address]</dd>
+<dt>Phone</dt><dd>[Your Contact Number]</dd>
+<dt>Email</dt><dd>[Your Business Email]</dd>
+<dt>Hours</dt><dd>[Opening and Closing Times]</dd>
+<dt>Website</dt><dd>[Your Website URL]</dd>
+<dt>Social</dt><dd>[Instagram / Facebook Links]</dd>
+</dl></div>
+</div></section>
+
+<footer><h3>Your fashion journey starts here.</h3><p>Explore our collections and find the perfect outfit for every moment!</p></footer>
+
+<script>
+var cats=[
+["Women's Clothing","Elegant and fashionable styles.",["Sarees: silk, cotton, Banarasi, designer, bridal","Salwar suits: Anarkali, palazzo, Patiala","Kurtis, lehengas, dupattas","Dresses, gowns and western wear","Sharara, gharara and co-ord sets","Nightwear and winter wear"]],
+["Men's Clothing","For casual outings, work and celebrations.",["Formal, casual and linen shirts","T-shirts, polos, jeans, chinos","Business and party wear suits","Kurta pajamas, sherwanis, Nehru jackets","Sportswear and winter wear","Nightwear and sleepwear"]],
+["Kids' Clothing","Adorable, comfortable outfits for little ones.",["Baby rompers, bodysuits and sets","Boys' and girls' everyday wear","Kids' ethnic and party wear","School essentials, where available","Winter wear and nightwear"]],
+["Bridal & Wedding","Make every celebration special.",["Bridal lehengas and designer sarees","Wedding sherwanis and suits","Engagement and reception wear","Party wear gowns","Wedding guest outfits"]],
+["Casual & Everyday","Versatile, comfortable essentials.",["Cotton T-shirts and casual shirts","Jeans, leggings and jeggings","Cotton kurtis and casual dresses","Shorts, joggers, everyday trousers"]],
+["Premium & Designer","Sophisticated designs and premium styles.",["Designer dresses and sarees","Premium shirts and suits","Embroidered ethnic wear","Luxury party wear and co-ord sets"]],
+["Accessories","Complete your look, if available in store.",["Handbags, purses, wallets, belts","Scarves, stoles, fashion jewellery","Caps, hats, socks, hair accessories","Ties and pocket squares"]]];
+var seasons=[["Summer",["Cotton shirts and dresses","Lightweight kurtis","Linen clothing","Summer co-ord sets"]],["Winter",["Woollen sweaters","Jackets and coats","Hoodies and thermal wear","Warm kids' clothing"]],["Festive",["Diwali outfits","Wedding season wear","Festive kurtas","Party wear dresses"]]];
+var why=["Extensive clothing variety","Styles for every age group","Traditional and modern under one roof","Everyday and special occasion wear","Many colours, fabrics and designs","Collections for different budgets","Customer-focused shopping","Options for every season"];
+var online=[["Browse","Separate categories for men, women and kids, with search and filters."],["Look & Choose","High-quality photos, descriptions, sizes, colours and prices."],["Order","Shopping cart and checkout, with online payment or cash on delivery where available."],["Delivery","Delivery information and order tracking, if supported."]];
+function ul(a){return '<ul>'+a.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
+document.getElementById('cats').innerHTML=cats.map(function(c){return '<div class="card"><h3>'+c[0]+'</h3><p>'+c[1]+'</p>'+ul(c[2])+'</div>'}).join('');
+document.getElementById('seasons').innerHTML=seasons.map(function(s){return '<div class="card"><h3>'+s[0]+' Collection</h3>'+ul(s[1])+'</div>'}).join('');
+document.getElementById('why').innerHTML=why.map(function(w){return '<span class="pill">'+w+'</span>'}).join('');
+document.getElementById('online').innerHTML=online.map(function(o){return '<div class="card"><h3>'+o[0]+'</h3><p>'+o[1]+'</p></div>'}).join('');
+</script>
+</body>
+</html>
